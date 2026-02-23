@@ -137,6 +137,11 @@
 }
 
 @media (max-width: 768px) {
+    .footer {
+        padding-bottom: 100px;
+        /* Space for MobileActionFooter (70px) + breathing room */
+    }
+
     .footer__contact-bar {
         flex-direction: column;
         align-items: center;
@@ -150,5 +155,15 @@
 
     .footer__disclaimer {
         text-align: left;
+    }
+
+    .footer__bottom-links {
+        margin-top: var(--space-xs);
+    }
+
+    .footer__link {
+        font-size: 0.9rem;
+        /* Slightly larger for easier tapping */
+        padding: 5px 0;
     }
 }
