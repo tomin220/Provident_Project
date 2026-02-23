@@ -71,7 +71,11 @@ const About = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.6 }}
                             >
-                                <span className="about__feature-icon">🏛️</span>
+                                <span className="about__feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="24" height="24">
+                                        <path d="M3 21h18" /><path d="M3 7v1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7H3l2-4h14l2 4" /><path d="M5 21V10.85" /><path d="M19 21V10.85" /><path d="M9 21v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4" />
+                                    </svg>
+                                </span>
                                 <div>
                                     <strong>Premium Architecture</strong>
                                     <p>Manchester-inspired facades with modern interiors</p>
@@ -84,7 +88,11 @@ const About = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.7 }}
                             >
-                                <span className="about__feature-icon">🌿</span>
+                                <span className="about__feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="24" height="24">
+                                        <path d="M12 22v-7a3 3 0 0 0-3-3H9m3 10V10a5 5 0 0 1 5-5h1" /><path d="M12 22V9a7 7 0 0 0-7-7H4" />
+                                    </svg>
+                                </span>
                                 <div>
                                     <strong>Sustainability Focus</strong>
                                     <p>Rainwater harvesting & solar-powered common areas</p>

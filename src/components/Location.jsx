@@ -49,7 +49,11 @@ const Location = () => {
                             </div>
                             <div className="location__map-overlay">
                                 <div className="location__map-overlay-content">
-                                    <span className="location__map-icon">📍</span>
+                                    <span className="location__map-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="32" height="32">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
+                                        </svg>
+                                    </span>
                                     <h4 className="location__map-overlay-title">Unlock Full Location Map</h4>
                                     <p className="location__map-overlay-text">Register to view exact location & surrounding infrastructure.</p>
                                     <button className="btn btn-primary">View Map Details</button>
