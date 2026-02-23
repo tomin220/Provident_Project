@@ -1,0 +1,11 @@
+.blur-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: inherit;
+    text-align: inherit;
+}
+
+.blur-text__element {
+    display: inline-block;
+    will-change: filter, opacity, transform;
+}

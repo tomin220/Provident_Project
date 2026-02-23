@@ -1,0 +1,88 @@
+.sustainability {
+    background: var(--color-bg-alt);
+}
+
+.sustainability__header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.sustainability__intro {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    color: var(--color-text-light);
+    line-height: 1.7;
+    font-weight: 400;
+    /* Use base weights */
+}
+
+.sustainability__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+}
+
+.sustainability__card {
+    background: var(--color-white);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    border: 1.5px solid #edf2f7;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+    transition: all var(--transition);
+}
+
+.sustainability__card:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-accent);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.1);
+}
+
+.sustainability__card-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-md);
+    text-align: center;
+}
+
+.sustainability__card-title {
+    font-size: 1.15rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-md);
+    text-align: center;
+    font-weight: 700;
+}
+
+.sustainability__list {
+    list-style: none;
+}
+
+.sustainability__list li {
+    font-size: 0.925rem;
+    color: var(--color-text-light);
+    margin-bottom: 0.65rem;
+    padding-left: 1.25rem;
+    position: relative;
+    line-height: 1.5;
+    font-weight: 450;
+    /* Slightly bolder for sub-details */
+}
+
+.sustainability__list li::before {
+    content: '•';
+    color: var(--color-accent);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    .sustainability__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .sustainability__grid {
+        grid-template-columns: 1fr;
+    }
+}

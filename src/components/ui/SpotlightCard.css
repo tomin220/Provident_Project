@@ -1,0 +1,21 @@
+.spotlight-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    background: var(--color-white);
+    height: 100%;
+}
+
+.spotlight-card__light {
+    pointer-events: none;
+    position: absolute;
+    inset: -1px;
+    transition: opacity 0.3s;
+    z-index: 0;
+}
+
+.spotlight-card>*:not(.spotlight-card__light) {
+    position: relative;
+    z-index: 1;
+}
